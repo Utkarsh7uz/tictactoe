@@ -1,0 +1,113 @@
+body {
+    background-color: darkslategrey;
+    margin: 0;
+    padding: 0;
+}
+#board {
+    background-color: lightblue;
+    position: absolute;
+}
+.tile{
+    position: absolute;
+    padding: 0;
+    transition:1s;
+    margin: 0;
+    background-color: darkseagreen;
+    box-sizing: border-box;
+    border:5px solid black ;
+}
+.tile div{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size:34px;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 5px;
+}
+#alertBox{
+    color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #eee;
+    border-radius: 10px;
+    top: 10%;
+    left: -200%;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-family: monospace;
+}
+  
+#headingBox{
+    position: absolute;
+    width: 84%;
+    height: auto;
+    top: 5%;
+    left: 8%;
+  }
+  
+  #heading{
+    overflow: auto;
+    font-weight: lighter;
+    font-kerning: normal;
+  }
+  
+  #textBox{
+    position: absolute;
+    font-size: 18px;
+    width: 84%;
+    left: 8%;
+    height: 60%;
+    top: 25%;
+  }
+  #ok{
+    position: absolute;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    left: 35%;
+    top: 85%;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgba(0, 255, 76, 0.7);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  #ok:hover{
+    box-shadow: -2px -2px 15px 1px rgba(0,0,0,0.2) inset;
+    background-color: rgba(170,170,170,0.9);
+  }
+#state{
+    position: absolute;
+    width: 80%;
+    top: 80px;
+    left: 10%;
+    height: 50px;
+    font-family: monospace;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    background: aquamarine;
+}
+#state h3{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -20%;
+}
+#restart{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.7) 5px 5px 10px ;
+    background: aquamarine;
+    font-family: monospace;
+}

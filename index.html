@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+  <script language="javascript" type="text/javascript" src="game.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width"/>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+</head>
+
+<body>
+  <div id="alertBox">
+    <div id="headingBox">
+      <h1 id="heading">Tic - Tac - Toe</h1>
+    </div>
+    <div id="textBox">
+      <p id="text"></p>
+    </div>
+      <div id="buttonBox">
+        <button id="ok" onclick="restart()">RESTART</button>
+      </div>
+  </div>
+  <div id="state"><h3>Tic Tac Toe</h3></div>
+  <div id="board">
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+    <span class="tile"><div></div></span>
+
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <button id="Restart" onclick="restart()">Restart</button>
+</body>
+</html>
