@@ -14,21 +14,17 @@ function won(value){
     document.getElementById("state").firstChild.innerHTML=value +" WINS";
     document.getElementById("state").style.background = "yellow";
     currentValue = "won";
-    //board.reset();
-    //restart();
 }
-function customAlert(message){
-    let al = document.getElementById("alertBox");
-    al.style.left= "10%";
-    let t = document.getElementById("text");
-    t.innerHTML = message;
-}
+// function customAlert(message){
+//     let al = document.getElementById("alertBox");
+//     al.style.left= "10%";
+//     let t = document.getElementById("text");
+//     t.innerHTML = message;
+// }
 function restart(){
     board.reset();
     tilesFilled = 0;
     currentValue = "X";
-    let al = document.getElementById("alertBox");
-    al.style.left = "-200%";
     document.getElementById("state").style.background = "aquamarine";
     document.getElementById("state").firstChild.innerHTML = "Tic tac toe";
 }
@@ -87,13 +83,14 @@ class Tile {
     reset(){
         this.value = null;
         this.textId.innerHTML = "";
+        this.id.style.backgroundColor = "darkseagreen";
     }
 }
 
 class Board {
     constructor(){
         this.id = document.getElementById("board");
-        if(innerWidth<=innerHeight){
+        if(innerHeight/innerWidth >= 3/2){
             this.LENGTH = innerWidth*0.8;
             this.x = innerWidth*0.1;
             this.y = (innerHeight -  this.LENGTH)/2;
